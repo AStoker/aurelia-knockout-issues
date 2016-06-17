@@ -1,0 +1,13 @@
+<template>
+  <require from="nav-bar.html"></require>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <div knockout>
+
+      <nav-bar router.bind="router"></nav-bar>
+
+      <div class="page-host" >
+          <span data-bind="text: foo"></span>
+        <router-view></router-view>
+      </div>
+  </div>
+</template>
